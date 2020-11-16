@@ -1,5 +1,5 @@
 import React from 'react';
-import {Profile} from './index'
+import {Profile, Skill, Create} from './index'
 
 const MainContents = (props) => {
   return(
@@ -12,11 +12,11 @@ const MainContents = (props) => {
               );
           }else if(props.currentId === 'skill'){
             return(
-              <></>
+              <Skill />
               );
           }else if(props.currentId === 'create'){
             return(
-              <></>
+              <Create />
               );
           }else{
             return(

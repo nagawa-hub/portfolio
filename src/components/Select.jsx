@@ -1,22 +1,31 @@
 import React from 'react';
-// import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, createStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
-// const useStyles = makeStyles((theme) => ({
-//   root: {
-//     '& > *': {
-//       margin: theme.spacing(1),
-//     },
-//   },
-// }));
-
+const useStyles = makeStyles(() => (
+  createStyles({
+    "button":{
+      borderColor: "#3399FF",
+      color: "#3399FF",
+      fontWeight: 600,
+      height: 50,
+      width: 150,
+      "&:hover":{
+        backgroundColor:"#3399FF",
+        color: "#FFFFFF"
+      }
+    }
+  })
+))
 
 
 const Select = (props) => {
-  // const classes = useStyles();
+  const classes = useStyles();
   return(
-    <Button variant="contained" color="primary" onClick={() => props.select(props.nextId)} >
-        {props.text}
+    <Button
+      className={classes.button}
+      variant="outlined" onClick={() => props.select(props.nextId)} >
+      {props.text}
     </Button>
 
   )
