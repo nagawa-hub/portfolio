@@ -15,7 +15,7 @@ import Button from '@material-ui/core/Button';
 const Select = (props) => {
   // const classes = useStyles();
   return(
-    <Button variant="contained" color="primary">
+    <Button variant="contained" color="primary" onClick={() => props.select(props.nextId)} >
         {props.text}
     </Button>
 

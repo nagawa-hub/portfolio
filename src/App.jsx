@@ -5,6 +5,40 @@ import {Header, SelectArea, MainContents} from './components/index'
 class App extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      currentId: ""
+    }
+    this.selectMain = this.selectMain.bind(this)
+  }
+
+
+  selectMain = (nextMainId) => {
+    switch(true){
+      case(nextMainId === ""):
+        this.setState({
+          currentId: 'init'
+        })
+        break;
+      case(nextMainId === "profile"):
+        this.setState({
+          currentId: 'profile'
+        })
+        break;
+      case(nextMainId === "skill"):
+        this.setState({
+          currentId: 'skill'
+        })
+        break;
+      case(nextMainId === "create"):
+        this.setState({
+          currentId: 'create'
+        })
+        break;
+    }
+  }
+
+  componentDidMount(){
+    this.selectMain(this.state.currentId)
   }
 
   render(){
@@ -12,9 +46,9 @@ class App extends React.Component {
         <div className="container">
           <Header />
 
-          <SelectArea />
+          <SelectArea select={this.selectMain}/>
           
-          <MainContents />
+          <MainContents currentId={this.state.currentId}/>
         </div>
       );
   }
