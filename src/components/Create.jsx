@@ -5,9 +5,7 @@ import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import ThumbUpIcon from '@material-ui/icons/ThumbUp';
 import Sarabred from '../assets/img/sarabred.png';
 import Furima from '../assets/img/furima.png';
 
@@ -32,7 +30,7 @@ const Create = () => {
       <div className={classes.content}>
       <CardHeader
         title="Sarabred"
-        subheader="顧客管理＋活動記録アプリケーション"
+        subheader="顧客管理・活動記録アプリ"
       />
       <CardMedia
         className={classes.media}
@@ -42,7 +40,8 @@ const Create = () => {
         <Typography variant="body2" color="textSecondary" component="p">
           法人向けの営業担当者が使えるように設計した顧客管理・活動記録アプリです。<br/> 
           ログインすることによって会社のデータを登録ができ、登録されている会社に対していつ、何を行ったかを記録することができます。<br/>
-          また取引ステータスや見込みなども合わせて登録ができるので、優良顧客に対して効果的なアプローチができているかの指標にすることができます。
+          また取引ステータスや見込みなども合わせて登録ができるので、優良顧客に対して効果的なアプローチができているかの指標にすることができます。<br/>
+          言語：<span className="rails_tag">Ruby on Rails</span>
         </Typography>
       </CardContent>
       <Button 
@@ -51,11 +50,8 @@ const Create = () => {
         target="_blank"
         href="http://54.238.18.138/"
       >
-        アプリへはこちら
+        アプリへはこちらから
       </Button>
-        <IconButton>
-          <ThumbUpIcon />
-        </IconButton>
       </div>
 
       <div className={classes.content}>
@@ -71,20 +67,18 @@ const Create = () => {
         <Typography variant="body2" color="textSecondary" component="p">
           商品を出品したり購入ができるフリマアプリです。<br/>
           PAY.JPのAPIを使い、購入機能を実装しました。<br/>
-          サーバーの都合上、当日出品されたアイテムの画像しか表示されません。
+          サーバーの都合上、当日出品されたアイテムの画像しか表示されません。<br/>
+          言語：<span className="rails_tag">Ruby on Rails</span>
         </Typography>
       </CardContent>
         <Button 
           variant="outlined" 
           color="primary"
           target="_blank"
-          href="#outlined-buttons"
+          href="https://furima-31652.herokuapp.com/"
         >
-          アプリへはこちら
+          アプリへはこちらから
         </Button>
-        <IconButton>
-          <ThumbUpIcon />
-        </IconButton>
       </div>
     </Card>    
   )

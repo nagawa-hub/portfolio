@@ -6,7 +6,9 @@
 .header{
   height: 100px;
   width: 100vw;
-  border: 1px solid black;
+  text-align: center;
+  font-size: 70px;
+  color: #3399FF;
 }
 .select_area{
   align-items: center;
@@ -19,8 +21,14 @@
 .main_contents{
   width: 80%;
 }
+.profile_title{
+  border-bottom: 1px solid #3399FF;
+}
 
 .sns_link{
   display: flex;
   justify-content: center;
+}
+.rails_tag{
+  color: red;
 }

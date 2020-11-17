@@ -6,7 +6,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentId: ""
+      currentId: "profile"
     }
     this.selectMain = this.selectMain.bind(this)
   }
@@ -14,11 +14,6 @@ class App extends React.Component {
 
   selectMain = (nextMainId) => {
     switch(true){
-      case(nextMainId === ""):
-        this.setState({
-          currentId: 'init'
-        })
-        break;
       case(nextMainId === "profile"):
         this.setState({
           currentId: 'profile'
@@ -44,7 +39,7 @@ class App extends React.Component {
   render(){
       return (
         <div className="container">
-          <Header />
+          <Header currentId={this.state.currentId}/>
 
           <SelectArea select={this.selectMain}/>
           
