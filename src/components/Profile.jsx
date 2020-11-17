@@ -19,14 +19,15 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: '80%',
   },
   img: {
-    width: 150,
-    height: 150,
-    margin: 'auto',
+    width: 120,
+    height: 120,
+    margin: 30,
     display: 'block',
     maxWidth: '100%',
     maxHeight: '100%',
   },
   content:{
+    marginLeft: 20,
     marginBottom: 20
   }
 }));
