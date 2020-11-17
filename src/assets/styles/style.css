@@ -17,6 +17,10 @@
   width: 80%;
 }
 .main_contents{
-  height: 400px;
   width: 80%;
+}
+
+.sns_link{
+  display: flex;
+  justify-content: center;
 }
