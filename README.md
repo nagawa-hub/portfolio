@@ -4,8 +4,7 @@
 http://myportfolio0925bucket.s3-website-ap-northeast-1.amazonaws.com/
 
 ### 使用言語 / 環境
-言語：React
-環境：AWS S3
+言語：React / 環境：AWS S3
 
 ## Profileスライド
 <img width="1050" alt="68b0f14fe96e9a4eaf0b5bb74ab024d0" src="https://user-images.githubusercontent.com/72905756/101323233-aee8fd80-38ab-11eb-8d38-86e5061ac145.png">
